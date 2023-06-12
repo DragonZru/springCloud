@@ -3,6 +3,7 @@ package com.spring.web;
 import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import java.util.TimeZone;
 
@@ -11,6 +12,7 @@ import java.util.TimeZone;
  * todo 基础模块引用<base工程>，不再C/V导入代码
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class WebApplication {
 
     public static void main(String[] args) {
